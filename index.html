@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>권휘석 블로그</title>
+  <link rel="icon" href="./profile.png">
   <link rel="preload" href="./posts.json" as="fetch" crossorigin="anonymous">
   <link rel="preload" href="./profile.png" as="image">
   <style>
@@ -43,8 +44,8 @@
     .post-item .post-title { font-size: 15px; font-weight: 600; line-height: 1.5; color: #111; }
     .post-item .post-date { font-size: 12px; color: #bbb; margin-top: 4px; }
     .post-item .post-header { display: flex; align-items: center; gap: 8px; }
-    .new-badge { font-size: 10px; font-weight: 700; color: #ff4444; animation: blink 1.2s ease-in-out infinite; }
-    @keyframes blink { 0%,100% { opacity: 1; } 50% { opacity: 0; } }
+    .new-badge { font-size: 10px; font-weight: 700; color: #fff; background: #ff6b2b; padding: 2px 6px; border-radius: 4px; white-space: nowrap; animation: hotpulse 1.8s ease-in-out infinite; }
+    @keyframes hotpulse { 0%,100% { box-shadow: 0 0 0 0 rgba(255,107,43,0.6); } 50% { box-shadow: 0 0 0 5px rgba(255,107,43,0); } }
 
     .more-note { font-size: 12px; color: #bbb; text-align: center; margin-bottom: 24px; }
 
@@ -70,7 +71,7 @@
     <div class="profile">
       <img src="./profile.png" alt="권휘석" width="64" height="64" fetchpriority="high" />
       <h1>권휘석</h1>
-      <p>오늘도 씁니다.</p>
+      <p>네이버 블로그 &lt;오늘도 씁니다&gt;</p>
     </div>
 
     <div class="section-title">최근 글</div>
