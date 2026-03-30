@@ -8,8 +8,8 @@
     * { margin: 0; padding: 0; box-sizing: border-box; }
 
     body {
-      background: #0f0f0f;
-      color: #f0f0f0;
+      background: #fff;
+      color: #111;
       font-family: 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif;
       min-height: 100vh;
       display: flex;
@@ -36,14 +36,12 @@
     .profile p {
       margin-top: 8px;
       font-size: 14px;
-      color: #888;
-      line-height: 1.6;
+      color: #999;
     }
 
     .section-title {
       font-size: 12px;
-      color: #555;
-      text-transform: uppercase;
+      color: #aaa;
       letter-spacing: 1px;
       margin-bottom: 12px;
     }
@@ -51,67 +49,71 @@
     .post-list {
       display: flex;
       flex-direction: column;
-      gap: 10px;
-      margin-bottom: 32px;
+      gap: 8px;
+      margin-bottom: 12px;
     }
 
     .post-item {
       display: block;
-      background: #1a1a1a;
-      border: 1px solid #2a2a2a;
-      border-radius: 12px;
+      border: 1px solid #e8e8e8;
+      border-radius: 10px;
       padding: 16px 20px;
       text-decoration: none;
       color: inherit;
-      transition: background 0.2s, border-color 0.2s;
+      transition: background 0.15s;
     }
 
     .post-item:hover {
-      background: #222;
-      border-color: #444;
+      background: #f7f7f7;
     }
 
     .post-item .post-title {
       font-size: 15px;
       font-weight: 600;
       line-height: 1.5;
-      color: #f0f0f0;
+      color: #111;
     }
 
     .post-item .post-date {
       font-size: 12px;
-      color: #555;
-      margin-top: 6px;
+      color: #bbb;
+      margin-top: 4px;
+    }
+
+    .more-note {
+      font-size: 12px;
+      color: #bbb;
+      text-align: center;
+      margin-bottom: 24px;
     }
 
     .blog-link {
       display: block;
       text-align: center;
-      background: #1a1a1a;
-      border: 1px solid #2a2a2a;
-      border-radius: 12px;
-      padding: 16px;
+      border: 1px solid #e8e8e8;
+      border-radius: 10px;
+      padding: 15px;
       text-decoration: none;
-      color: #888;
+      color: #555;
       font-size: 14px;
-      transition: background 0.2s;
+      transition: background 0.15s;
     }
 
     .blog-link:hover {
-      background: #222;
-      color: #f0f0f0;
+      background: #f7f7f7;
+      color: #111;
     }
 
     .loading {
       text-align: center;
-      color: #555;
+      color: #bbb;
       font-size: 14px;
       padding: 40px 0;
     }
 
     .error {
       text-align: center;
-      color: #666;
+      color: #bbb;
       font-size: 14px;
       padding: 20px 0;
     }
@@ -128,6 +130,7 @@
     <div class="post-list" id="post-list">
       <div class="loading">불러오는 중...</div>
     </div>
+    <div class="more-note" id="more-note"></div>
 
     <a class="blog-link" href="https://blog.naver.com/kwonhuiseok" target="_blank">
       블로그 전체 글 보기 →
@@ -145,11 +148,13 @@
 
     async function loadPosts() {
       const list = document.getElementById('post-list');
+      const note = document.getElementById('more-note');
       try {
         const res = await fetch(PROXY + encodeURIComponent(RSS_URL));
         const data = await res.json();
         const xml = new DOMParser().parseFromString(data.contents, 'text/xml');
-        const items = Array.from(xml.querySelectorAll('item')).slice(0, 7);
+        const all = Array.from(xml.querySelectorAll('item'));
+        const items = all.slice(0, 3);
 
         if (items.length === 0) {
           list.innerHTML = '<div class="error">글을 불러올 수 없어요.</div>';
@@ -167,6 +172,10 @@
             </a>
           `;
         }).join('');
+
+        if (all.length > 3) {
+          note.textContent = `+ 이전 글 ${all.length - 3}개가 쌓여 있어요`;
+        }
       } catch (e) {
         list.innerHTML = '<div class="error">잠시 후 다시 시도해주세요.</div>';
       }
