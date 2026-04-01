@@ -1,6 +1,11 @@
 {
   "items": [
     {
+      "title": "글쓰기가 좋아서 쓴다고? 반만 맞다.",
+      "link": "https://blog.naver.com/kwonhuiseok/224236254829?fromRss=true&trackingCode=rss",
+      "pubDate": "2026.04.01"
+    },
+    {
       "title": "내 블로그 최근 조회수 공개, 로또 번호네.",
       "link": "https://blog.naver.com/kwonhuiseok/224234884663?fromRss=true&trackingCode=rss",
       "pubDate": "2026.03.31"
@@ -9,11 +14,6 @@
       "title": "나이가 들수록 행동은 이렇게 변한다.",
       "link": "https://blog.naver.com/kwonhuiseok/224233661961?fromRss=true&trackingCode=rss",
       "pubDate": "2026.03.30"
-    },
-    {
-      "title": "처갓집에서 아내에게 소리 질렀다.",
-      "link": "https://blog.naver.com/kwonhuiseok/224232742402?fromRss=true&trackingCode=rss",
-      "pubDate": "2026.03.29"
     }
   ],
   "total": 50
