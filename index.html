@@ -120,6 +120,7 @@
     </div>
     <div class="more-note" id="more-note"></div>
 
+    <hr style="border: none; border-top: 1px solid #f0f0f0; margin: 16px 0;">
     <a class="blog-link" href="https://blog.naver.com/kwonhuiseok" target="_blank">
       블로그 전체 글 보기 →
     </a>
@@ -160,7 +161,7 @@
         `).join('');
 
         const streak = data.streak || 0;
-        if (streak > 0) note.textContent = `${streak}일 연속 쓰는 중`;
+        if (streak > 0) note.textContent = `+ ${streak}일 연속 쓰는 중`;
       } catch (e) {
         list.innerHTML = '<div class="error">잠시 후 다시 시도해주세요.</div>';
       }
