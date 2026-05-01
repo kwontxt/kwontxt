@@ -46,15 +46,10 @@
     .post-item .post-header { display: flex; align-items: center; gap: 8px; }
 
     .new-badge {
-      font-size: 10px;
-      font-weight: 700;
-      color: #111;
-      background: #fff;
-      border: 1px solid #111;
-      padding: 2px 6px;
-      border-radius: 4px;
-      white-space: nowrap;
-      order: -1;
+      font-size: 10px; font-weight: 700; color: #111;
+      background: #fff; border: 1px solid #111;
+      padding: 2px 6px; border-radius: 4px;
+      white-space: nowrap; order: -1;
       animation: hotpulse 1.8s ease-in-out infinite;
     }
     @keyframes hotpulse { 0%,100% { box-shadow: 0 0 0 0 rgba(0,0,0,0.25); } 50% { box-shadow: 0 0 0 4px rgba(0,0,0,0); } }
@@ -62,44 +57,29 @@
     .more-note { font-size: 13px; font-weight: 600; color: #111; text-align: center; margin-bottom: 24px; }
 
     .blog-link {
-      display: block;
-      text-align: center;
-      border: 1px solid #e8e8e8;
-      border-radius: 10px;
-      padding: 15px;
-      text-decoration: none;
-      color: #555;
-      font-size: 14px;
-      transition: background 0.15s;
-      margin-top: 8px;
+      display: block; text-align: center;
+      border: 1px solid #e8e8e8; border-radius: 10px;
+      padding: 15px; text-decoration: none;
+      color: #555; font-size: 14px;
+      transition: background 0.15s; margin-top: 8px;
     }
     .blog-link:hover { background: #f7f7f7; color: #111; }
 
-    .cafe-heart {
-      display: inline-block;
-      margin-right: 6px;
-      color: #111;
-      animation: heartbeat 1.4s ease-in-out infinite;
+    .cafe-btn {
+      display: block; margin-top: 8px; padding: 18px 20px;
+      background: #111; border-radius: 10px;
+      text-decoration: none; text-align: center;
+      transition: opacity 0.15s;
     }
-    @keyframes heartbeat {
-      0%, 100% { transform: scale(1); }
-      30% { transform: scale(1.35); }
-      60% { transform: scale(1.1); }
-    }
+    .cafe-btn:hover { opacity: 0.85; }
+    .cafe-btn-title { font-size: 13px; font-weight: 700; color: #fff; letter-spacing: -0.2px; }
+    .cafe-btn-sub { font-size: 11px; color: #888; margin-top: 5px; }
 
-    .cafe-sub { font-size: 11px; color: #ccc; text-align: center; margin-top: 6px; }
-
-    .threads-footer {
-      margin-top: 32px;
-      text-align: center;
-    }
+    .threads-footer { margin-top: 32px; text-align: center; }
     .threads-icon {
-      display: inline-flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 6px;
-      text-decoration: none;
-      color: #111;
+      display: inline-flex; flex-direction: column;
+      align-items: center; gap: 6px;
+      text-decoration: none; color: #111;
       transition: opacity 0.15s;
     }
     .threads-icon:hover { opacity: 0.5; }
@@ -107,7 +87,7 @@
     .threads-handle { font-size: 11px; color: #bbb; }
 
     .loading { text-align: center; color: #bbb; font-size: 14px; padding: 40px 0; }
-    .error { text-align: center; color: #bbb; font-size: 14px; padding: 20px 0; }
+    .error   { text-align: center; color: #bbb; font-size: 14px; padding: 20px 0; }
   </style>
 </head>
 <body>
@@ -124,26 +104,13 @@
     </div>
     <div class="more-note" id="more-note"></div>
 
-    <hr style="border: none; border-top: 1px solid #f0f0f0; margin: 16px 0;">
-    <a class="blog-link" href="https://kwontxt.stibee.com/subscribe" target="_blank">
-      뉴스레터 구독하기 →
-    </a>
-    <div class="cafe-sub">오늘도 씁니다 · 월 2회 발송</div>
-    <a class="blog-link" href="https://blog.naver.com/kwonhuiseok" target="_blank" style="margin-top:16px;">
+    <hr style="border:none;border-top:1px solid #f0f0f0;margin:16px 0;">
+    <a class="blog-link" href="https://blog.naver.com/kwonhuiseok" target="_blank">
       블로그 전체 글 보기 →
     </a>
-    <a href="https://cafe.naver.com/iegrwrite" target="_blank" style="
-      display: block; margin-top: 8px; padding: 18px 20px;
-      background: #111; border-radius: 10px; text-decoration: none;
-      border: none; transition: opacity 0.15s;
-    " onmouseover="this.style.opacity='0.85'" onmouseout="this.style.opacity='1'">
-      <div style="display:flex; align-items:center; justify-content:space-between;">
-        <div>
-          <div style="font-size:13px; font-weight:700; color:#fff; letter-spacing:-0.2px;">읽을거리 카페 함께 씁니다</div>
-          <div style="font-size:11px; color:#888; margin-top:5px; font-weight:400;">매일 글쓰기 커뮤니티 · 지금 바로 참여하세요</div>
-        </div>
-        <span style="font-size:18px; color:#fff; margin-left:12px;">→</span>
-      </div>
+    <a class="cafe-btn" href="https://cafe.naver.com/iegrwrite" target="_blank">
+      <div class="cafe-btn-title">읽을거리 카페, 함께 씁니다 →</div>
+      <div class="cafe-btn-sub">글쓰기 커뮤니티 · 지금 바로 참여하세요</div>
     </a>
 
     <div class="threads-footer">
@@ -157,18 +124,12 @@
   </div>
 
   <script>
-    async function loadPosts() {
+    (async function () {
       const list = document.getElementById('post-list');
       const note = document.getElementById('more-note');
       try {
-        const res = await fetch('./posts.json', { priority: 'high' });
-        const data = await res.json();
-
-        if (!data.items || data.items.length === 0) {
-          list.innerHTML = '<div class="error">글을 불러올 수 없어요.</div>';
-          return;
-        }
-
+        const data = await fetch('./posts.json', { priority: 'high' }).then(r => r.json());
+        if (!data.items?.length) { list.innerHTML = '<div class="error">글을 불러올 수 없어요.</div>'; return; }
         list.innerHTML = data.items.map((item, i) => `
           <a class="post-item" href="${item.link}" target="_blank">
             <div class="post-header">
@@ -176,19 +137,13 @@
               <div class="post-title">${item.title}</div>
             </div>
             <div class="post-date">${item.pubDate}</div>
-          </a>
-        `).join('');
-
-        const start = new Date('2025-11-11');
-        const today = new Date();
-        const streak = Math.floor((today - start) / (1000 * 60 * 60 * 24)) + 1;
+          </a>`).join('');
+        const streak = Math.floor((Date.now() - new Date('2025-11-11').getTime()) / 86400000) + 1;
         note.textContent = `+ ${streak}일 연속 쓰는 중`;
-      } catch (e) {
+      } catch {
         list.innerHTML = '<div class="error">잠시 후 다시 시도해주세요.</div>';
       }
-    }
-
-    loadPosts();
+    })();
   </script>
 </body>
 </html>
