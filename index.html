@@ -87,34 +87,16 @@
 
     .more-note { font-size: 13px; font-weight: 600; color: #111; text-align: center; margin-bottom: 24px; }
 
-    .blog-link {
-      display: block; text-align: center;
+    .link-btn {
+      display: block; margin-top: 8px; padding: 16px 20px;
       border: 1px solid #e8e8e8; border-radius: 10px;
-      padding: 15px; text-decoration: none;
-      color: #555; font-size: 14px;
-      transition: background 0.15s; margin-top: 8px;
-    }
-    .blog-link:hover { background: #f7f7f7; color: #111; }
-
-    .cafe-btn {
-      display: block; margin-top: 8px; padding: 18px 20px;
-      background: #111; border-radius: 10px;
       text-decoration: none; text-align: center;
-      transition: opacity 0.15s;
+      transition: background 0.15s, border-color 0.15s;
+      background: #fff;
     }
-    .cafe-btn:hover { opacity: 0.85; }
-    .cafe-btn-title { font-size: 13px; font-weight: 700; color: #fff; letter-spacing: -0.2px; }
-    .cafe-btn-sub { font-size: 11px; color: #888; margin-top: 5px; }
-
-    .ourtxt-btn {
-      display: block; margin-top: 8px; padding: 18px 20px;
-      background: #f7f7f7; border-radius: 10px; border: 1px solid #ebebeb;
-      text-decoration: none; text-align: center;
-      transition: background 0.15s;
-    }
-    .ourtxt-btn:hover { background: #efefef; }
-    .ourtxt-btn-title { font-size: 13px; font-weight: 700; color: #111; letter-spacing: -0.2px; }
-    .ourtxt-btn-sub { font-size: 11px; color: #aaa; margin-top: 5px; }
+    .link-btn:hover { background: #f7f7f7; border-color: #d0d0d0; }
+    .link-btn-title { font-size: 14px; font-weight: 600; color: #111; letter-spacing: -0.3px; }
+    .link-btn-sub { font-size: 11px; color: #bbb; margin-top: 4px; }
 
     .threads-footer { margin-top: 32px; text-align: center; }
     .threads-icon {
@@ -149,16 +131,16 @@
     <div class="more-note" id="more-note"></div>
 
     <hr style="border:none;border-top:1px solid #f0f0f0;margin:16px 0;">
-    <a class="blog-link" href="https://blog.naver.com/kwonhuiseok" target="_blank">
-      블로그 전체 글 보기 →
+    <a class="link-btn" href="https://blog.naver.com/kwonhuiseok" target="_blank">
+      <div class="link-btn-title">블로그 전체 글 보기 →</div>
     </a>
-    <a class="cafe-btn" href="https://cafe.naver.com/iegrwrite" target="_blank">
-      <div class="cafe-btn-title">읽을거리 카페, 함께 씁니다 →</div>
-      <div class="cafe-btn-sub">글쓰기 커뮤니티 · 지금 바로 참여하세요</div>
+    <a class="link-btn" href="https://cafe.naver.com/iegrwrite" target="_blank">
+      <div class="link-btn-title">읽을거리 카페, 함께 씁니다 →</div>
+      <div class="link-btn-sub">글쓰기 커뮤니티</div>
     </a>
-    <a class="ourtxt-btn" href="https://ourtxt.vercel.app" target="_blank">
-      <div class="ourtxt-btn-title">Ourtxt — 텍스트 카드 메이커 →</div>
-      <div class="ourtxt-btn-sub">글만 쓰세요, 카드는 제가 만들게요.</div>
+    <a class="link-btn" href="https://ourtxt.vercel.app" target="_blank">
+      <div class="link-btn-title">Ourtxt →</div>
+      <div class="link-btn-sub">글만 쓰세요, 카드는 제가 만들게요.</div>
     </a>
 
     <div class="threads-footer">
