@@ -1,6 +1,11 @@
 {
   "items": [
     {
+      "title": "가민 러닝 데이터 분석했는데, 나 왜 이렇게 뛰냐",
+      "link": "https://blog.naver.com/kwonhuiseok/224335720844?fromRss=true&trackingCode=rss",
+      "pubDate": "2026.07.04"
+    },
+    {
       "title": "블로그 조회수가 전부는 아니지만, 중요하긴 해",
       "link": "https://blog.naver.com/kwonhuiseok/224334674290?fromRss=true&trackingCode=rss",
       "pubDate": "2026.07.03"
@@ -9,11 +14,6 @@
       "title": "말 한마디의 무게를 항상 잊고 산다",
       "link": "https://blog.naver.com/kwonhuiseok/224333490862?fromRss=true&trackingCode=rss",
       "pubDate": "2026.07.02"
-    },
-    {
-      "title": "자신감이 부추긴 2km 달리기, 내겐 욕심이었나",
-      "link": "https://blog.naver.com/kwonhuiseok/224332280509?fromRss=true&trackingCode=rss",
-      "pubDate": "2026.07.01"
     }
   ],
   "total": 50
