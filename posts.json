@@ -1,6 +1,11 @@
 {
   "items": [
     {
+      "title": "오늘도 달리기를 포기했다",
+      "link": "https://blog.naver.com/kwonhuiseok/224354632455?fromRss=true&trackingCode=rss",
+      "pubDate": "2026.07.22"
+    },
+    {
       "title": "테슬라 프렁크 소프트 클로징 셀프 시공 후 에러 발생",
       "link": "https://blog.naver.com/kwonhuiseok/224352483475?fromRss=true&trackingCode=rss",
       "pubDate": "2026.07.21"
@@ -9,11 +14,6 @@
       "title": "또 염증",
       "link": "https://blog.naver.com/kwonhuiseok/224352486600?fromRss=true&trackingCode=rss",
       "pubDate": "2026.07.20"
-    },
-    {
-      "title": "강팀",
-      "link": "https://blog.naver.com/kwonhuiseok/224351018662?fromRss=true&trackingCode=rss",
-      "pubDate": "2026.07.19"
     }
   ],
   "total": 50
