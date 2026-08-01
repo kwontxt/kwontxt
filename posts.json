@@ -1,6 +1,11 @@
 {
   "items": [
     {
+      "title": "강릉 안녕",
+      "link": "https://blog.naver.com/kwonhuiseok/224365055758?fromRss=true&trackingCode=rss",
+      "pubDate": "2026.08.01"
+    },
+    {
       "title": "강릉 중앙시장",
       "link": "https://blog.naver.com/kwonhuiseok/224364267414?fromRss=true&trackingCode=rss",
       "pubDate": "2026.07.31"
@@ -9,11 +14,6 @@
       "title": "경포 호수",
       "link": "https://blog.naver.com/kwonhuiseok/224363119478?fromRss=true&trackingCode=rss",
       "pubDate": "2026.07.30"
-    },
-    {
-      "title": "매일 쓰는 데 조회수가 안 나와요.",
-      "link": "https://blog.naver.com/kwonhuiseok/224361899150?fromRss=true&trackingCode=rss",
-      "pubDate": "2026.07.29"
     }
   ],
   "total": 50
