@@ -1,6 +1,11 @@
 {
   "items": [
     {
+      "title": "물고기와 비타민 사탕",
+      "link": "https://blog.naver.com/kwonhuiseok/224365943257?fromRss=true&trackingCode=rss",
+      "pubDate": "2026.08.02"
+    },
+    {
       "title": "강릉 안녕",
       "link": "https://blog.naver.com/kwonhuiseok/224365055758?fromRss=true&trackingCode=rss",
       "pubDate": "2026.08.01"
@@ -9,11 +14,6 @@
       "title": "강릉 중앙시장",
       "link": "https://blog.naver.com/kwonhuiseok/224364267414?fromRss=true&trackingCode=rss",
       "pubDate": "2026.07.31"
-    },
-    {
-      "title": "경포 호수",
-      "link": "https://blog.naver.com/kwonhuiseok/224363119478?fromRss=true&trackingCode=rss",
-      "pubDate": "2026.07.30"
     }
   ],
   "total": 50
