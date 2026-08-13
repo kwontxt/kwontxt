@@ -1,6 +1,11 @@
 {
   "items": [
     {
+      "title": "러닝은 사과 하나를 안고",
+      "link": "https://blog.naver.com/kwonhuiseok/224377844331?fromRss=true&trackingCode=rss",
+      "pubDate": "2026.08.13"
+    },
+    {
       "title": "18개월 효자",
       "link": "https://blog.naver.com/kwonhuiseok/224376693061?fromRss=true&trackingCode=rss",
       "pubDate": "2026.08.12"
@@ -9,11 +14,6 @@
       "title": "어린이집 수족구와 원장 선생님",
       "link": "https://blog.naver.com/kwonhuiseok/224375013767?fromRss=true&trackingCode=rss",
       "pubDate": "2026.08.11"
-    },
-    {
-      "title": "푸시업이라도 해보자",
-      "link": "https://blog.naver.com/kwonhuiseok/224374414386?fromRss=true&trackingCode=rss",
-      "pubDate": "2026.08.10"
     }
   ],
   "total": 50
